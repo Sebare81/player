@@ -1,1 +1,162 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Me / Xatspace</title><meta name="author" content="JasonOficial - 1202"><link rel="icon" type="image/png" size="36x36" href="./assets/img/favicon.png"><link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><link rel="stylesheet" href="./assets/js/slick/slick.css"><link rel="stylesheet" href="./assets/css/index.min.css"></head><body><div class="jd_theme__template"><div class="jd_theme__load"><div class="jd_load__content"><p><span style="--i: 1">L</span><span style="--i: 2">o</span><span style="--i: 3">a</span><span style="--i: 4">d</span><span style="--i: 5">i</span><span style="--i: 6">n</span><span style="--i: 7">g</span><span style="--i: 8">.</span><span style="--i: 9">.</span><span style="--i: 10">.</span></p></div></div><div class="jd_theme__banner"><div class="jd_banner__img"><img src="./assets/img/banner_bg.jpg" alt="Banner" /></div></div><div class="jd_theme__header"><div class="jd_container header"><div class="jd_header__user"><div class="jd_user__wrapper"><div class="jd_user__avatar tooltip" data-tooltip="JasonOficial"><div class="jd_user__avatar_box"><img src="https://i.postimg.cc/XYSM3wZ4/xat.jpg" alt="Avatar" /></div></div><div class="jd_user__data"><h1>xxxx</h1><p>xxxx</p><strong>xxxx</strong><div class="jd_user__data_location"><i class="bx bxs-location-plus"></i><span>xxxx</span></div></div></div><div class="jd_user__find"><a href="#">Find Me</a></div></div><div class="jd_header__crush tooltip" data-tooltip="Cherry"><div class="jd_crush__box"><div class="jd_crush__avatar"><img src="https://i.postimg.cc/XYSM3wZ4/xat.jpg" alt="Crush Avatar" /></div></div><div class="jd_crush__data"><span>Crush</span><a href="#" class="jd_open__modal"><i class="bx bxs-heart"></i></a></div></div></div></div><div class="jd_theme__content"><div class="jd_container content"><div class="jd_content__col"><div class="jd_description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At atque illo, ducimus esse temporibus aliquam, sequi vero neque adipisci maxime odio dolores eligendi magnam, quidem aspernatur amet nobis eius ipsum est doloribus. Earum ab distinctio amet omnis necessitatibus iusto blanditiis autem neque? Ea, quisquam! Blanditiis autem aliquid consequatur obcaecati iste? </p></div><div class="jd_networks"><h3>Social Networks</h3><div class="jd_networks__navigate"><a href="#" class="jd_networks__link tooltip" id="facebook" target="_blank" data-tooltip="facebook"><i class="bx bxl-facebook"></i></a><a href="#" class="jd_networks__link tooltip" id="twitter" target="_blank" data-tooltip="twitter"><i class="bx bxl-twitter"></i></a><a href="#" class="jd_networks__link tooltip" id="instagram" target="_blank" data-tooltip="instagram"><i class="bx bxl-instagram"></i></a><a href="#" class="jd_networks__link tooltip" id="youtube" target="_blank" data-tooltip="youtube"><i class="bx bxl-youtube"></i></a><a href="#" class="jd_networks__link tooltip" id="tiktok" target="_blank" data-tooltip="tiktok"><i class="bx bxl-tiktok"></i></a><a href="#" class="jd_networks__link tooltip" id="tumblr" target="_blank" data-tooltip="tumblr"><i class="bx bxl-tumblr"></i></a><a href="#" class="jd_networks__link tooltip" id="discord" target="_blank" data-tooltip="discord"><i class="bx bxl-discord"></i></a></div></div></div><div class="jd_content__col right"><div class="jd_video"><div class="jd_corner"></div><div class="jd_video__box"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div></div></div></div><div class="jd_theme__friend"><div class="jd_container friend"><div class="jd_friend__title"><h2>Friends</h2></div><div class="jd_friend__content"><button class="jd_btn__slide left" id="prev"><i class="bx bx-left-arrow-alt"></i></button><button class="jd_btn__slide right" id="next"><i class="bx bx-right-arrow-alt"></i></button></div></div></div><div class="jd_theme__footer"><p>Theme - me.xatgif.com </p><span>&copy; 2022 JasonOficial - 1202 </span></div></div><script src="https://code.jquery.com/jquery-3.0.0.min.js"></script><script src="./assets/js/slick/slick.min.js"></script><script src="./assets/js/config.js"></script><script src="./assets/js/index.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Player Demo</title>
+    <style>
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+    body {
+        background: url(<?php echo $bg;?>);
+        background-size: cover;
+        overflow: hidden;
+        color: #fff;
+    }
+    .btn {
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6) !important;
+    }
+    .margin-top {
+        margin-top: -13px; /* tricky */
+    }
+    .vol-size {
+        font-size: 1.3rem;
+    }
+    .radio-name {
+        font-size: 2rem;
+        font-family: 'Holtwood One SC', serif;
+        background: -webkit-linear-gradient(#81ecec, #0984e3);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .radio-buttons {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        margin-top: 5vh;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px 1px rgba(125, 125, 125, 0.6) !important;
+        border-radius: 10px;
+    }
+    .radio-volume {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        display: inline-block;
+        margin-top: 5vh;
+    }
+    .radio-volume i {
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-3">
+        <div class="text-center margin-top">
+            <h2 class="radio-name"><?php echo $nazwa;?></h2>
+            <p class="status mt-3">
+                [<span class="icon">
+                    <i class="fas fa-info-circle"></i>
+                </span>] 
+                <span class="text">Loading...</span>
+            </p>
+            <audio id="player" src="#" autoplay></audio>
+            <div class="radio-buttons">
+                <button type="button" id="play" class="btn btn-success btn-round shadow">
+                    <i class="far fa-play-circle"></i> Play
+                </button>
+                <button type="button" id="pause" class="btn btn-danger shadow">
+                    <i class="far fa-pause-circle"></i> Pause
+                </button>
+                <button type="button" id="stop" class="btn btn-warning shadow">
+                    <i class="far fa-stop-circle"></i> Stop
+                </button>
+            </div>
+            <div class="radio-volume">
+                <div class="form-group">
+                    <label for="vol">
+                        <i class="fas fa-volume-up"></i>
+                    </label>
+                    <input type="range" class="form-control-range" id="vol" value="75" maxvalue="100%">
+                    <span class="vol-size">75%</span>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+    <script>
+    const statusText = $('.status .text');
+    const statusIcon = $('.status .icon');
+    const volSize = $('.vol-size');
+    const player = $('#player');
+    const url = "https://s1.slotex.pl:7314/;";
+    
+    const zeroPad = (num, places) => String(num).padStart(places, '0'); // adds zeros to numbers below than 10
+
+    let status = false;
+
+    player.prop('volume', 0.75); // default
+
+    $(document).ready(function() {
+        if (player.attr('src') == '#') {
+            player.attr('src', url);
+        }
+        if (false === status) { // autoplay
+            player.get(0).play().then(function() { // can autoplay
+                status = true;
+                statusText.html('Playing...');
+                statusIcon.html('<i class="fas fa-volume-up"></i>');
+            }).catch(function() { // throws error, ask to play manual
+                statusText.html('Click <strong>Play</strong> to listen!');
+            });
+        }
+        $('#play').click(function() {
+            if (false === status) {
+                status = true;
+                if (player.attr('src') == '#') {
+                    player.attr('src', url);
+                }
+                player.get(0).play();
+                statusText.html('Playing...');
+                statusIcon.html('<i class="fas fa-volume-up"></i>');
+            }
+        }),
+        $('#pause').click(function() {
+            if (true === status) {
+                status = false;
+                player.get(0).pause();
+                statusText.html('Paused');
+                statusIcon.html('<i class="fas fa-volume-mute"></i>');
+            }
+        }),
+        $('#stop').click(function() {
+            if (true === status) {
+                status = false;
+                player.attr('src', '#');
+                player.get(0).pause();
+                statusText.html('Stopped');
+                statusIcon.html('<i class="fas fa-volume-mute"></i>');
+            }
+        }),
+        $("#vol").change(function() {
+            let volume = $(this).val();
+            volSize.html(zeroPad(volume, 2) + '%');
+            player.prop("volume", volume / 100);
+        });
+    });
+    </script>
+</body>
+</html>
