@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MafiaGryzonia</title>
+<style>
+ body { margin: 0; }
+ div {
+	position: fixed;
+	font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+ }
+
+ .a {
+	left: 0;
+	top: 0;
+	right: 50%;
+	bottom: 50%;
+	width:420px; 
+	height:364px;
+	background-size: cover;
+ }
+   			/*!
+ * 3D Falling Leaves
+ */
+
+  .october-leaf {
+     position: absolute;
+     background-color: transparent;
+     background-image: url('notas.png');
+     width:420px; 
+     height:364px;
+     background-size: cover;
+     -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+     transform: translateZ(0);
+  }
+   .data {
+     position: absolute;
+     font-family: 'Chela One', cursive;
+     font-size: 15px;
+     left: 210px;
+     top: 30px;
+     color: #fa225b;
+     width: 236px;
+     height: 19px;
+     z-index: 16;
+     border: 1px;
+  }
+   #Clock {
+     position: absolute;
+     top: 50px;
+     left: 323px;
+     width: 43px;
+     color: #fa225b;
+     font-family: 'Chela One', cursive;
+     font-size: 15px;
+  }
+
+</style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="rotate3Di.js"></script>
+<script src="rotate3Di.min.js"></script>
+<script src="mafiaFinal.js" ></script>
+<div align="center">
+ <div class="player" id="miplayer">
+ <div class="a" style="background-image:url(https://sebare81.github.io/sebare/assets/img/avatar_01.jpg)">
+ <div id="mafiagryzonia" style="width:420px; height:364px;background: transparent url() bottom / cover no-repeat;">loading...</div>	
+</div>
+</head>
+<body>
+
+<script src="org.jquery.ripples.js"></script>
+  <script>
+$(document).ready(function() {
+  try {
+    $('.a,.b,.c').ripples({
+      resolution: 256,
+      dropRadius: 20,
+      perturbance: 0.04
+    });
+  }
+  catch (e) {
+    $('.error').show().text(e);
+  }
+});
+</script>
+<script> jQuery(document).octoberLeaves() </script>
+  <script>
+  $("#mafiagryzonia").mafia({
+  userinterface: "big",
+  backgroundcolor: "transparent",
+  fontcolor: "#ffffff",
+  hightlightcolor: "#fa225b",
+  fontname: "Saira Condensed",
+  googlefont: "Saira+Condensed:wght@100",
+  fontratio: "0.5",
+  radioname: "MAFIA GRYZONIA",
+  scroll: "false",
+  coverimage: "mouse.png",
+  usevisualizer: "fake",
+  coverstyle: "animated",
+  visualizertype: "4",
+  multicolorvisualizer: "true",
+    color1: "#f6f6f6",
+    color2: "#323edd",
+    color3: "#fc5404",
+    color4: "#fa225b",
+  itunestoken: "1000lIPN",
+  metadatatechnic: "",
+  ownmetadataurl: "",
+  streamurl: "http://s1.slotex.pl:7314/;",
+  streamtype: "live",
+  icecastmountpoint: "/radio.mp3",
+  radionomyid: "",
+  radionomyapikey: "",
+  radiozenoid: "7314",
+  radiojarid: "",
+  radiocoid: "",
+  shoutcastpath: "/stream",
+  shoutcastid: "1",
+  streamsuffix: "",
+  metadatainterval: "10000",
+  volume: "50",
+  debug: "false",
+  usestreamcorsproxy: "false", 
+  corsproxy: "",
+  autoplay:"true",
+    });
+</script>         
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
+</body>
