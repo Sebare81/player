@@ -1,4 +1,9 @@
 <center>
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
 <style>
  div {
 	font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -120,5 +125,5 @@ $(document).ready(function() {
 </script>         
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
 <br>
-	<iframe src="https://mafiagryzonia.panelradiowy.pl/embed.php?script=ramowka2" scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no" width="490" height="200"></iframe> 
+	<iframe src="https://mafiagryzonia.panelradiowy.pl/embed.php?script=ramowka2" scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no" onload="resizeIframe(this)"></iframe> 
 </center>
